@@ -1,5 +1,45 @@
 const libraryBooks = [
     {
+        "title": "Atomic Habits",
+        "url": "Atomic habits.pdf",
+        "cover": ""
+    },
+    {
+        "title": "The Power of Your Subconscious Mind",
+        "url": "Joseph Murphy - The Power of Your Subconcious Mind (1988) .pdf",
+        "cover": ""
+    },
+    {
+        "title": "The 7 Habits of Highly Effective People",
+        "url": "The 7 Habits of Highly Effective .pdf",
+        "cover": ""
+    },
+    {
+        "title": "The Psychology of Money",
+        "url": "The Psychology of Money.pdf",
+        "cover": ""
+    },
+    {
+        "title": "The Ultimate ESL Teaching Manual",
+        "url": "The_Ultimate_ESL_Vocabulary_Manual_The_Ultimate_ESL_Teaching_Manual.pdf",
+        "cover": ""
+    },
+    {
+        "title": "Think and Grow Rich",
+        "url": "Think-And-Grow-Rich.pdf",
+        "cover": ""
+    },
+    {
+        "title": "English Language: 250 Grammar Exercises",
+        "url": "angliyskiy_yazyk_250_grammaticheskikh_uprazhneniy.pdf",
+        "cover": ""
+    },
+    {
+        "title": "The Art of Seduction",
+        "url": "the-art-of-seduction.pdf",
+        "cover": ""
+    },
+    {
         "title": "Pride and prejudice",
         "url": "https://www.gutenberg.org/cache/epub/1342/pg1342-images.html",
         "cover": "https://www.gutenberg.org/cache/epub/1342/images/cover.jpg"
