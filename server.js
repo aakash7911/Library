@@ -23,4 +23,18 @@ app.get('/api/photos', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
+    
+    // Self-ping to prevent Render from sleeping on the free tier
+    const url = process.env.RENDER_EXTERNAL_URL;
+    if (url) {
+        const https = require('https');
+        console.log(`Starting self-ping on ${url} every 14 minutes`);
+        setInterval(() => {
+            https.get(url, (res) => {
+                console.log(`Self-ping status: ${res.statusCode}`);
+            }).on('error', (err) => {
+                console.error(`Self-ping error: ${err.message}`);
+            });
+        }, 14 * 60 * 1000); // Ping every 14 minutes
+    }
 });
